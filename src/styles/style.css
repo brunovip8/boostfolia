@@ -115,6 +115,7 @@ html, body, .wrapper {
     width: 100%;
     text-align: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 .bx-wrapper {
@@ -125,10 +126,29 @@ html, body, .wrapper {
     
 }
 
-.bx-wrapper .bx-next {
+.bx-wrapper .bx-next, .bx-wrapper .bx-prev {
     background: none;
+    border-top: 3px solid #a1a1a1;
+    border-left: 3px solid #a1a1a1;
+    transform: rotate(45deg);
+}
+
+.bx-wrapper .bx-next {
+    transform: rotate(135deg);
 }
 
 .bx-wrapper .bx-prev {
-    background: none;
+    transform: rotate(-45deg);
+}
+
+.scroll {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+img {
+    width: 18px;
+    height: 37px;
 }
