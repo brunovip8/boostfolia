@@ -1,9 +1,16 @@
+/* FONTS */
+@font-face {
+    font-family: "BNT";
+    src: url("../assets/fonts/bignoodletitling.ttf");
+}
+
 /* RESET STYLE */
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "BNT", sans-serif;
 }
 
 html, body, .wrapper {
@@ -152,3 +159,37 @@ img {
     width: 18px;
     height: 37px;
 } */
+
+/* ABOUT */
+
+#about {
+    padding: 94px 0px 120px 0px;
+}
+
+.about__title {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-text {
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+.title-line {
+    background-color: orange;
+    width: 23%;
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    margin: 20px auto 30px auto;
+}
+
+.subtittle-text {
+    color: #919191;
+    font-size: 14px;
+}
