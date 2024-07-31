@@ -5,11 +5,11 @@ $(document).ready(function () {
 })
 
 $(".menu").on("click", function () {
-    if( $("menu").hasClass("opened")) {
-        $("menu").removeClass("opened").addClass("closed")
+    if( $(".menu").hasClass("opened")) {
+        $(".menu").removeClass("opened").addClass("closed")
     }
     else {
-        $("menu").removeClass("closed").addClass("opened")
+        $(".menu").removeClass("closed").addClass("opened")
     }
 })
 

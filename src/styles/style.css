@@ -100,6 +100,74 @@ html, body, .wrapper {
     animation: dissapear 0.25s linear forwards;
 }
 
+.menu.closed > .menu__icon {
+    animation: appear 0.25s linear forwards;
+}
+
+.menu.closed > .menu__icon::before {
+    animation: rotareAndToTop 0.5s linear forwards;
+}
+
+.menu.closed > .menu__icon::after {
+    animation: rotateAndToBottom 0.5s linear forwards ;
+}
+
+@keyframes appear {
+    0% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+@keyframes rotateAndToBottom {
+    0% {
+        top: -2px;
+        transform: rotate(-45deg);
+    }
+
+    40% {
+        top: -2px;
+        transform: rotate(0deg);
+    }
+
+    60% {
+        top: -2px;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        top: 8px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotareAndToTop {
+    0% {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    40% {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    60% {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        top: -10px;
+        transform: rotate(0deg);
+    }
+} 
+
 @keyframes dissapear {
     0% {
         background-color: black;
