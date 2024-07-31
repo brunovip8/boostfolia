@@ -141,7 +141,7 @@ html, body, .wrapper {
     transform: rotate(-45deg);
 }
 
-.scroll {
+/* .scroll {
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -151,4 +151,4 @@ html, body, .wrapper {
 img {
     width: 18px;
     height: 37px;
-}
+} */
