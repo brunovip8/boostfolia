@@ -5,6 +5,11 @@ $(document).ready(function () {
 })
 
 $(".menu").on("click", function () {
-    $(".menu").toggleClass("opened")
+    if( $("menu").hasClass("opened")) {
+        $("menu").removeClass("opened").addClass("closed")
+    }
+    else {
+        $("menu").removeClass("closed").addClass("opened")
+    }
 })
 
