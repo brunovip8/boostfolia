@@ -25,7 +25,7 @@ html, body, .wrapper {
     background-color: white;
     padding: 49.5px 0;
     position: fixed;
-    z-index: 2;
+    z-index: 99999;
 }
 
 .header__container {
@@ -171,6 +171,7 @@ img {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .title-text {
@@ -197,5 +198,25 @@ img {
 
 .about__item {
     background-color: #ebebeb;
-    
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.about__item > div {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__item > h3 {
+    color: #707070;
+    font-weight: bold;
+    font-size: 18;
+    margin: 15px 0;
+}
+
+.about__item > p {
+    color: #919191;
+    font-size: 14;
 }
