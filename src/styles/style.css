@@ -488,3 +488,14 @@ body,
     padding: 0;
     gap: 3px;
 }
+
+.prices_purchase {
+    color: rgb(13, 202, 240);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.prices_purchase:hover {
+    background-color: rgb(13, 202, 240);
+    color: #ff4000;
+}
