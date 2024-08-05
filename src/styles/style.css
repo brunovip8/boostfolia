@@ -1,8 +1,11 @@
 /* FONTS */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap');
+
 @font-face {
     font-family: "BNT";
     src: url("../assets/fonts/bignoodletitlingrus.ttf");
+
 }
 
 /* RESET STYLE */
@@ -14,7 +17,9 @@
     font-family: "BNT", sans-serif;
 }
 
-html, body, .wrapper {
+html,
+body,
+.wrapper {
     width: 100%;
     height: 100%;
 }
@@ -79,7 +84,8 @@ html, body, .wrapper {
     transition: all 0.1s linear;
 }
 
-.menu__icon::before, .menu__icon::after {
+.menu__icon::before,
+.menu__icon::after {
     content: "";
     display: block;
     width: 38px;
@@ -89,7 +95,9 @@ html, body, .wrapper {
     transition: all 0.5s linear;
 }
 
-.menu__icon, .menu__icon::before, .menu__icon::after {
+.menu__icon,
+.menu__icon::before,
+.menu__icon::after {
     border-radius: 2px;
 }
 
@@ -101,27 +109,27 @@ html, body, .wrapper {
     top: 8px;
 }
 
-.menu.opened > .menu__icon {
+.menu.opened>.menu__icon {
     animation: dissapear 0.25s linear forwards;
 }
 
-.menu.opened > .menu__icon::before {
+.menu.opened>.menu__icon::before {
     animation: toBottomAndRotate 0.5s linear forwards;
 }
 
-.menu.opened > .menu__icon::after {
+.menu.opened>.menu__icon::after {
     animation: toTopAndRotate 0.5s linear forwards;
 }
 
-.menu.closed > .menu__icon {
+.menu.closed>.menu__icon {
     animation: appear 0.25s linear forwards;
 }
 
-.menu.closed > .menu__icon::before {
+.menu.closed>.menu__icon::before {
     animation: rotateAndToTop 0.5s linear forwards;
 }
 
-.menu.closed > .menu__icon::after {
+.menu.closed>.menu__icon::after {
     animation: rotateAndToBottom 0.5s linear forwards;
 }
 
@@ -133,6 +141,7 @@ html, body, .wrapper {
     99% {
         background-color: transparent;
     }
+
     100% {
         background-color: black;
     }
@@ -143,14 +152,17 @@ html, body, .wrapper {
         top: 0;
         transform: rotate(45deg);
     }
+
     40% {
         top: 0;
         transform: rotate(0deg);
     }
+
     60% {
         top: 0;
         transform: rotate(0deg);
     }
+
     100% {
         top: -10px;
         transform: rotate(0deg);
@@ -167,10 +179,12 @@ html, body, .wrapper {
         top: -2px;
         transform: rotate(0deg);
     }
+
     60% {
         top: -2px;
         transform: rotate(0deg);
     }
+
     100% {
         top: 8px;
         transform: rotate(0deg);
@@ -181,9 +195,11 @@ html, body, .wrapper {
     0% {
         background-color: black;
     }
+
     99% {
         background-color: black;
     }
+
     100% {
         background-color: transparent;
     }
@@ -239,6 +255,7 @@ html, body, .wrapper {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -250,6 +267,7 @@ html, body, .wrapper {
         transform: translateX(400%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -282,13 +300,14 @@ html, body, .wrapper {
     margin-bottom: 0;
 }
 
-.bx-wrapper .bx-prev, .bx-wrapper .bx-next {
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next {
     background: none;
     border-top: 3px solid #a1a1a1;
     border-left: 3px solid #a1a1a1;
 }
 
-.bx-wrapper .bx-prev { 
+.bx-wrapper .bx-prev {
     transform: rotate(-45deg);
 }
 
@@ -339,21 +358,21 @@ html, body, .wrapper {
     font-family: "Roboto", sans-serif;
 }
 
-.about__item > div {
+.about__item>div {
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.about__item > h3 {
+.about__item>h3 {
     color: #707070;
     font-weight: bold;
     font-size: 18px;
     margin: 15px 0;
 }
 
-.about__item > p {
+.about__item>p {
     color: #919191;
     font-size: 14px;
 }
@@ -365,22 +384,27 @@ html, body, .wrapper {
     padding: 60px 0 70px 0;
 }
 
-.features__title {
+.title-dark {
     margin-bottom: 45px;
 }
 
-.features__title_el {
+.title_el {
     color: white;
     text-transform: uppercase;
     font-size: 36px;
 }
 
-.features__title-text {
+.title_el>p {
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.title-light-text {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
 
-.features__title-line {
+.title-gray-line {
     display: block;
     background-color: #404040;
     width: 20%;
@@ -395,7 +419,7 @@ html, body, .wrapper {
     color: white;
 }
 
-.features__item > div {
+.features__item>div {
     height: 60px;
     display: flex;
     justify-content: center;
@@ -403,15 +427,64 @@ html, body, .wrapper {
 
 }
 
-.features__item > h4, .features__item > p {
+.features__item>h4,
+.features__item>p {
     font-family: "Roboto", sans-serif;
 }
 
-.features__item > h4 {
+.features__item>h4 {
     margin: 30px 0;
     font-size: 18px;
 }
 
-.features__item > p {
+.features__item>p {
     font-size: 48px;
+}
+
+
+/* PRICES */
+
+.prices {
+    padding: 60px 0 100px 0;
+    background-color: #171f23;
+}
+
+.prices__item {
+    transition: border 0.5s linear;
+}
+
+.prices__item:hover {
+    border: 1px solid orange;
+}
+
+.prices__item * {
+    font-family: "Montserrat", serif;
+}
+
+.prices__name {
+    padding: 40px 20px;
+}
+
+.plan__prices > span {
+    text-decoration: underline orange;
+}
+
+.prices__services {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prices__services > li {
+    font-size: 14px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 3px;
 }
