@@ -499,3 +499,106 @@ body,
     background-color: rgb(13, 202, 240);
     color: black;
 }
+
+.team__title-text {
+    display: flex;
+    justify-content: center;
+}
+
+/* TEAM */
+
+#team {
+    padding: 50px 0 120px 0 ;
+}
+
+.teamslider {
+    justify-content: space-between;
+}
+
+.sinner1, .sinner2 {
+    background-color: #e9dddd;
+}
+
+.team__img {
+    width: 135px;
+    height: 135px;
+    background-color: #ef6b50;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.team__links {
+    display: flex;
+    gap: 15px;
+}
+
+.sinner1 {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 130px;
+}
+
+.sinner2 {
+    width: 68%;
+    padding: 120px 120px 60px 120px;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill__text {
+    width: 25%;
+}
+
+.skill__item > div {
+    width: 60%;
+    position: relative;
+}
+
+.skill__progress {
+    display: block;
+    height: 3px;
+    background-color: white;
+    width: 100%;
+}
+
+.skill__progress::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: var(--progress-width);
+    background-color: orange;
+}
+
+.skill__value {
+    width: 15px;
+    text-align: center;
+}
+
+section#team .bx-wrapper {
+    position: relative;
+}
+
+section#team .bx-pager {
+    display: flex;
+}
+
+section#team .bx-controls {
+    position: absolute;
+    bottom: 15%;
+    left: 12.25%;
+}
