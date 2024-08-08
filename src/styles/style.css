@@ -656,7 +656,7 @@ section#team .bx-controls {
     border: none;
 }
 
-.msginput > button {
+.msginput>button {
     display: block;
     margin: auto;
 }
@@ -673,6 +673,84 @@ section#team .bx-controls {
     outline: none;
 }
 
-a.flex-next, a.flex-prev {
+a.flex-next,
+a.flex-prev {
     height: 50px;
+}
+
+/* OFFICE */
+
+#office {
+    background-color: #211a1c;
+}
+
+div.accordion>h1#ui-id-1 {
+    padding: 34px 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.accordion>#ui-id-2 {
+    padding: 0;
+}
+
+div.accordion>h1#ui-id-1::after {
+    font-family: "Linearicons-Free";
+    content: "\e874";
+    display: inline-block;
+    margin-left: 25px;
+    transition: all 0.2s linear;
+    font-size: 20px;
+}
+
+div.accordion>h1#ui-id-1.ui-state-active::after {
+    transform: rotate(180deg);
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+}
+
+.container__footer {
+    background-color: #2a2629;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.container__footer>h1 {
+    font-size: 24px;
+    font-family: "BNT", serif;
+}
+
+.container__footer>h3 {
+    font-size: 14px;
+    font-family: "BNT", serif;
+}
+
+img {
+    width: 50px;
+}
+
+.links__socials {
+    display: flex;
+}
+
+.links__socials  path:hover {
+    fill: black;
+    stroke: black;
+    transition: all .3s linear;
 }
