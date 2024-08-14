@@ -1,0 +1,88 @@
+/* PORTFOLIO */
+
+
+
+#filters {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2%;
+}
+
+
+.filter {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.5);
+    transition: all .5s ease-in-out;
+}
+
+
+.filter:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+span.filter.mixitup-control-active {
+    color: black;
+    text-decoration: underline orange 2px;
+    font-weight: bold;
+}
+
+
+.work {
+    width: 20%;
+    background-color: white;
+    padding: 100px 0;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.lend::before, .b-card::before, .catalog::before, .shop::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: black;
+}
+
+
+.lend::before {
+    content: "Лендинг";
+}
+.b-card::before {
+    content: "Визитка";
+}
+.catalog::before {
+    content: "Каталог";
+}
+.shop::before {
+    content: "Интернет-магазин";
+}
+
+.about__work {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: -120%;
+    transform: translate(-50%, 0);
+    transition: all .3s linear;
+}
+.work:hover {
+    background-color: rgba(0,0,0, .05);
+}
+
+.work:hover .about__work{
+    bottom: -10%;
+    color: #919191;
+
+}

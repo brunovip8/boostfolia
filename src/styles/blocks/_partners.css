@@ -1,0 +1,17 @@
+/* PARTNERS */
+
+
+#partners {
+    background-color: #171f23;
+}
+
+.flexslider {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+a.flex-next, a.flex-prev {
+    height: 50px;
+}

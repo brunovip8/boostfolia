@@ -1,0 +1,35 @@
+/* OFFICE */
+
+#office {
+    background-color: #211a1c;
+    font-family: "Roboto", sans-serif;
+}
+
+div.accordion > h1#ui-id-1 {
+    padding: 34px 0;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion > div#ui-id-2 {
+    padding: 0;
+}
+
+div.accordion > h1#ui-id-1::after {
+    font-family: "Linearicons-Free";
+    content: '\e876';
+    display: inline-block;
+    margin-left: 25px;
+    transition: all .3s linear;
+    font-size: 20px;
+}
+
+div.accordion > h1#ui-id-1.ui-state-active::after {
+    transform: rotate(90deg);
+}

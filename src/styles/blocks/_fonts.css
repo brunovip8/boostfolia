@@ -1,0 +1,9 @@
+/* FONTS */
+@font-face {
+    font-family: "BNT";
+    src: url("../assets/fonts/bignoodletitlingrus.ttf")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+

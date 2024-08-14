@@ -1,0 +1,44 @@
+/* FOOTER */
+
+
+img#rocker__footer {
+    width: 30px;
+    height: 45px;
+}
+
+img#telegram__footer {
+    width: 45px;
+    height: 45px;
+}
+img#youtube__footer {
+    width: 45px;
+    height: 45px;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 94px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: #2a2629;
+}
+footer > h4 {
+    color: #fbefee;
+    font-size: 24px;
+    font-family: "  ", sans-serif;
+
+}
+
+footer p {
+    color: #fbefee;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+#icons__footer {
+    display: flex;
+}
+

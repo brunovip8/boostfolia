@@ -1,0 +1,54 @@
+/* PRICES */
+
+.prices {
+    padding: 60px 0 100px;
+    background-color: #171f23;
+}
+
+
+.prices__item {
+    transition: border 0.5s linear;
+}
+
+.prices__services {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prices__services > li {
+    font-size: 14px;
+}
+.prices__services > li > span {
+    display: inline;
+}
+.prices__item * {
+    font-family: "Open Sans", sans-serif;
+
+}
+.prices__name {
+}
+ 
+.plan__price > span {
+    text-decoration: underline orange;
+}
+
+.prices__item:hover {
+    border: 1px solid orange
+}
+
+
+.prices__purchase:hover {
+    background-color: rgb(13, 202, 240);
+    color: #171f23;
+    
+}
+
+.prices__purchase {
+    color: rgb(13, 202, 240);
+    font-weight: bold;
+    text-transform: uppercase;
+}
