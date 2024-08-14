@@ -63,13 +63,13 @@ html, body, .wrapper {
 }
 
 .header__logo span {
-    font-size: 40px;
+    font-size: calc(12px + 20 * (100vw / 1320));
 }
 
 .menu {
     width: 38px;
     height: 21px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -129,6 +129,43 @@ html, body, .wrapper {
     animation: rotateAndToBottom 0.25s linear forwards;
 }
 
+
+
+.navigation__menu {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+    gap: 1.5%;
+    width: 100%;
+}
+
+.nav__link {
+    color: #746868;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.nav__link:hover {
+    font-weight: 600;
+}
+
 .navigation {
     position: fixed;
     top: 0;
@@ -143,6 +180,7 @@ html, body, .wrapper {
 .menu-opened {
     transform: translateY(0);
     background-color: rgba(0,0,0,.4);
+    opacity: 1;
 }
 
 
@@ -160,6 +198,34 @@ html, body, .wrapper {
 }
 
 
+
+.navigation__menu {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+
+}
+
+.navigation__list {
+
+}
+.nav__link {
+    
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+}
 
 @keyframes appear {
     0% {

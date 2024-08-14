@@ -5,8 +5,8 @@ $(document).ready(function () {
 
     function setEqualHeight(selector) {
         let maxHeight = 0;
-        $(selector).each(function() {
-            if($(this).height() > maxHeight) {
+        $(selector).each(function () {
+            if ($(this).height() > maxHeight) {
                 maxHeight = $(this).height()
             }
             $(selector).height(maxHeight);
@@ -33,7 +33,7 @@ $(".flexslider").flexslider({
 $(".accordion").accordion({
     defaultOpen: '',
     collapsible: true,
-    
+
 });
 if ($(window).scrollTop() > 0) {
     $(".header").addClass("is-fixed");
@@ -41,29 +41,29 @@ if ($(window).scrollTop() > 0) {
 
 let mixer = mixitup(".workportfolio", {
     selectors: {
-        target: ".work", 
+        target: ".work",
     }
 
 
 
 });
-$(".navigation").on("click", function() {
+$(".navigation").on("click", function () {
     $(".menu").removeClass("opened").addClass("closed");
     $(".navigation").toggleClass("menu-opened");
 });
-$(".menu").on("click", function() {
-    if($(".menu").hasClass("opened")) {
+$(".menu").on("click", function () {
+    if ($(".menu").hasClass("opened")) {
         $(".menu").removeClass("opened").addClass("closed");
         $(".navigation").removeClass("menu-opened");
         $("body").css({
-            overflowY: "auto", 
+            overflowY: "auto",
         });
     }
     else {
         $(".menu").removeClass("closed").addClass("opened");
         $(".navigation").addClass("menu-opened");
         $("body").css({
-            overflowY: "hidden", 
+            overflowY: "hidden",
         })
 
     }
@@ -77,7 +77,7 @@ let heightOfHeader = $(".header").height();
 
 $(window).on("scroll", function () {
     console.log($(window).scrollTop());
-    if($(window).scrollTop() >= heightOfHeader / 2) {
+    if ($(window).scrollTop() >= heightOfHeader / 2) {
         $(".header").addClass("is-fixed");
     }
     else {
