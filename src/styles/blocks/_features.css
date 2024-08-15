@@ -58,7 +58,7 @@
 }
 
 .features__item > p {
-    font-size: 48px;
+    font-size: calc(16px + 24 *(100vw / 1320));
 }
 
 

@@ -10,10 +10,22 @@
     <link rel="stylesheet" href="src/styles/flexslider.css">
     <link rel="stylesheet" href="src/styles/accordion.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="src/styles/styles.css">
 </head>
 
 <body>
+    <div class="progress-page"></div>
+    <div class="preloader">
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+        <div class="preloader-item"></div>
+    </div>
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
@@ -22,7 +34,7 @@
                     <span>Студия создания сайтов</span>
                 </a>
 
-                <nav class="nav">
+                <nav class="nav animate__animated animate__backInRight">
                     <ul class="navigation__list">
                         <li><a href="#" class="nav__link">ГЛАВНАЯ</a></li>
                         <li><a href="#" class="nav__link">О НАС</a></li>
@@ -242,22 +254,22 @@
                     </div>
                     <div class="container-fluid features__items">
                         <div class="row justify-content-between">
-                            <div class="features__item col-xl-3 col-lg-3 col-md-3 col-6">
+                            <div class="features__item col-xl-3 col-lg-3 col-md-3 col-12">
                                 <div><img src="src/assets/computer.png" alt="comp"></div>
                                 <h4>Уже работающих сайтов</h4>
                                 <p>132</p>
                             </div>
-                            <div class="features__item col-xl-3 col-lg-3 col-md-3 col-6">
+                            <div class="features__item col-xl-3 col-lg-3 col-md-3 col-12">
                                 <div><img src="src/assets/integrated.png" alt="integrated"></div>
                                 <h4>Встроенная гарантия</h4>
                                 <p>6+ месяцев</p>
                             </div>
-                            <div class="features__item col-xl-3 col-lg-3 col-md-3 col-6">
+                            <div class="features__item col-xl-3 col-lg-3 col-md-3 col-12">
                                 <div><img src="src/assets/product.png" alt="product"></div>
                                 <h4>Созданых продуктов</h4>
                                 <p>9183</p>
                             </div>
-                            <div class="features__item col-xl-3 col-lg-3 col-md-3 col-6">
+                            <div class="features__item col-xl-3 col-lg-3 col-md-3 col-12">
                                 <div><img src="src/assets/medal.png" alt="medal"></div>
                                 <h4>Довольных клиентов</h4>
                                 <p>5000+</p>
@@ -372,7 +384,7 @@
                                                 <li class="skill__item">
                                                     <h5 class="skill__text">PHOTOSHOP</h5>
                                                     <div style="--progress-width: 88%">
-                                                        <span class="skill__progress"></span>
+                                                        <span class="prices"></span>
                                                     </div>
                                                     <span class="skill__value">88%</span>
                                                 </li>
@@ -549,9 +561,9 @@
                             <div class="col-4"></div>
                         </div>
                     </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="prices__item col-xl-3 col-lg-3 col-md-3 col-6 text-center text-light">
+                    <div class="container-fluid p-0">
+                        <div class="row justify-content-between m-0 p-0">
+                            <div class="prices__item col-xl-3 col-lg-3 col-md-3 col-12 text-center text-light">
                                 <div class="prices__name">
                                     <h4 class="plan__name">Лендинг</h4>
                                     <h2 class="plan__price">от <span>7000р</span></h2>
@@ -565,7 +577,7 @@
                                 </ul>
                                 <button class="prices__purchase btn mb-3 w-50 border-info">Купить</button>
                             </div>
-                            <div class="prices__item col-xl-3 col-lg-3 col-md-3 col-6 text-center text-light">
+                            <div class="prices__item col-xl-3 col-lg-3 col-md-3 col-12 text-center text-light">
                                 <div class="prices__name">
                                     <h4 class="plan__name">Визитка</h4>
                                     <h2 class="plan__price">от <span>25000р</span></h2>
@@ -579,7 +591,7 @@
                                 </ul>
                                 <button class="prices__purchase btn mb-3 w-50 border-info">Купить</button>
                             </div>
-                            <div class="prices__item col-xl-3 col-lg-3 col-md-3 col-6 text-center text-light">
+                            <div class="prices__item col-xl-3 col-lg-3 col-md-3 col-12 text-center text-light">
                                 <div class="prices__name">
                                     <h4 class="plan__name">Каталог</h4>
                                     <h2 class="plan__price">от <span>20000р</span></h2>
@@ -593,7 +605,7 @@
                                 </ul>
                                 <button class="prices__purchase btn mb-3 w-50 border-info">Купить</button>
                             </div>
-                            <div class="prices__item col-xl-3 col-lg-3 col-md-3 col-6 text-center text-light">
+                            <div class="prices__item col-xl-3 col-lg-3 col-md-3 col-12 text-center text-light">
                                 <div class="prices__name">
                                     <h4 class="plan__name">Интернет-магазин</h4>
                                     <h2 class="plan__price">от <span>35000р</span></h2>

@@ -12,9 +12,16 @@
 @import "./blocks/_footer.css";
 @import "./blocks/_fileReset.css";
 @import "./blocks/_fonts.css";
+@import "./blocks/_preloader.css";
 
-
-
+.progress-page {
+    height: 4px;
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+}
 
 
 

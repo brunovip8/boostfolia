@@ -1,3 +1,7 @@
+$(window).on("load", function () {
+    $(".preloader").fadeOut("slow")
+})
+
 $(document).ready(function () {
     $(".bxslider").bxSlider({
         pager: false,
@@ -38,6 +42,23 @@ $(".accordion").accordion({
 if ($(window).scrollTop() > 0) {
     $(".header").addClass("is-fixed");
 }
+
+let options = {
+    threshold: 0.8,
+}
+
+let callback = function(entries, observer) {
+    entries.forEach(function(entry){
+        console.log(entry);
+        if(entry.isIntersecting) {
+            $(entry.target).addClass("animate__animated").addClass("animate__fadeInRight")
+        }
+    })
+}
+
+let observer = new IntersectionObserver(callback, options)
+
+observer.observe($(".about__title")[0])
 
 let mixer = mixitup(".workportfolio", {
     selectors: {
@@ -83,4 +104,8 @@ $(window).on("scroll", function () {
     else {
         $(".header").removeClass("is-fixed");
     }
+
+    $(".progress-page").css({
+        width: $(window).scrollTop() / ($(document).height() - $(window).height()) * 100 + "%",
+    })
 });

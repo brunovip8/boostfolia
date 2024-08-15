@@ -86,3 +86,16 @@ span.filter.mixitup-control-active {
     color: #919191;
 
 }
+
+@media screen and (max-width: 550px){
+    #filters {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .work {
+        width: 33%;
+    }
+}
