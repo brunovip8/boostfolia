@@ -163,17 +163,18 @@
 
 
 
-.navbox {
+/* .navbox {
     display: flex;
     font-size: 30px;
     padding-top: 200px;
     justify-content: center;
     text-align: center;
-}
+} */
 
-.navlist {
+/* .navlist {
     list-style-type: none;
-}
+    z-index: 999;
+} */
 
 
 
@@ -186,7 +187,7 @@
 
 .nav {
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: center;
 }
 
